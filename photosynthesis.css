@@ -1,0 +1,165 @@
+body {
+    font-family: Arial, sans-serif;
+    background: #f4f9fd;
+    text-align: center;
+}
+
+.title {
+    margin: 20px 0;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.steps-box {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    width: 260px;
+    text-align: left;
+}
+
+.steps-box ul {
+    list-style: none;
+    padding: 0;
+}
+
+.steps-box li {
+    margin: 10px 0;
+}
+
+.steps-box .active {
+    font-weight: bold;
+    color: green;
+}
+
+.lab {
+    position: relative;
+    width: 600px;
+    height: 350px;
+    background: #eef6fb;
+    border-radius: 15px;
+}
+
+/* ☀️ SUN */
+.sun {
+    font-size: 70px;
+    position: absolute;
+    top: 30px;
+    left: 50px;
+    cursor: grab;
+}
+
+/* 🌱 PLANT */
+.plant {
+    font-size: 70px;
+    position: absolute;
+    bottom: 40px;
+    left: 260px;
+    transition: color 0.5s;
+}
+
+/* 🌱 Healthy plant with glow */
+.plant.healthy {
+    color: darkgreen;
+    text-shadow:
+        0 0 8px rgba(0, 255, 0, 0.6),
+        0 0 16px rgba(0, 255, 0, 0.4);
+    animation: leafGlow 2s infinite alternate;
+}
+
+@keyframes leafGlow {
+    from {
+        text-shadow:
+            0 0 6px rgba(0, 255, 0, 0.5),
+            0 0 12px rgba(0, 255, 0, 0.3);
+    }
+    to {
+        text-shadow:
+            0 0 12px rgba(0, 255, 0, 0.8),
+            0 0 20px rgba(0, 255, 0, 0.5);
+    }
+}
+
+
+/* 💧 WATER */
+.water {
+    font-size: 40px;
+    position: absolute;
+    bottom: 40px;
+    left: 150px;
+    cursor: grab;
+}
+
+/* 👤 HUMAN */
+.human {
+    font-size: 45px;
+    position: absolute;
+    bottom: 40px;
+    right: 60px;
+    cursor: grab;
+}
+
+/* ☁️ OXYGEN */
+.oxygen {
+    display: none;
+    position: absolute;
+    top: -30px;
+    left: 20px;
+    animation: float 2s infinite;
+}
+
+@keyframes float {
+    from { transform: translateY(0); opacity: 1; }
+    to { transform: translateY(-40px); opacity: 0; }
+}
+
+/* CONCLUSION */
+.conclusion {
+    display: none;
+    background: #e9fbe9;
+    width: 70%;
+    margin: 20px auto;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+.back {
+    margin-top: 15px;
+}
+
+/* ☀️ Sun rays */
+.sun {
+    position: absolute;
+}
+
+.rays {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    background: radial-gradient(
+        rgba(255, 215, 0, 0.4),
+        rgba(255, 215, 0, 0)
+    );
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    animation: raysPulse 2.5s infinite;
+    pointer-events: none;
+}
+
+.sun.active .rays {
+    opacity: 1;
+}
+
+@keyframes raysPulse {
+    0%   { transform: translate(-50%, -50%) scale(0.9); }
+    50%  { transform: translate(-50%, -50%) scale(1.1); }
+    100% { transform: translate(-50%, -50%) scale(0.9); }
+}
+

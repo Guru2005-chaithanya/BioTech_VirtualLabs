@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Acid–Base Reaction Lab</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="acid_base.css">
+</head>
+<body>
+
+<h1>🧪 Acid–Base Reaction</h1>
+
+<!-- Steps Box -->
+<div id="stepsBox" class="steps-box">
+    <h3>🧪 Experiment Steps</h3>
+    <ul>
+        <li id="step1" class="active">👉 Step 1: Pour ACID into the beaker</li>
+        <li id="step2">⬜ Step 2: Pour BASE into the beaker</li>
+        <li id="step3">⬜ Step 3: Observe reaction</li>
+    </ul>
+</div>
+
+<!-- Conclusion -->
+<div id="conclusionBox" class="conclusion-box" style="display:none;">
+    <h3>🧾 Conclusion</h3>
+    <p>
+        When an acid and a base react, they neutralize to form salt and water.
+        This process is called a neutralization reaction.
+    </p>
+</div>
+
+<!-- Instruction -->
+<p id="instruction" class="instruction">
+    🎯 Step 1: Drag the <b>ACID</b> test tube into the beaker
+</p>
+
+<!-- LAB AREA -->
+<div class="lab" style="display:flex;">
+
+    <div class="tube acid" data-type="acid">
+        <div class="liquid"></div>
+        <div class="pour-stream"></div>
+        <span>Acid</span>
+    </div>
+
+    <div class="tube base" data-type="base">
+        <div class="liquid"></div>
+        <div class="pour-stream"></div>
+        <span>Base</span>
+    </div>
+
+    <div class="beaker">
+        <div class="beaker-liquid"></div>
+        <span>Beaker</span>
+    </div>
+
+</div>
+
+<!-- BACK BUTTON -->
+<br><br>
+<a href="index.html">
+    <button>⬅ Back to Main Menu</button>
+</a>
+
+<!-- CONNECT JS -->
+<script src="acid_base.js"></script>
+
+</body>
+</html>

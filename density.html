@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Density & Floating Lab</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="density.css">
+</head>
+<body>
+
+<h1>🥚 Density & Floating Experiment</h1>
+
+<!-- Steps -->
+<div id="stepsBox" class="steps-box">
+    <h3>🧪 Experiment Steps</h3>
+    <ul>
+        <li id="step1" class="active">👉 Step 1: Pour water into the beaker</li>
+        <li id="step2">⬜ Step 2: Drop the egg into the beaker</li>
+        <li id="step3">⬜ Step 3: Add salt to the water</li>
+        <li id="step4">⬜ Step 4: Observe floating</li>
+    </ul>
+</div>
+
+<!-- LAB -->
+<div class="lab" style="display:flex;">
+
+    <!-- Water -->
+    <div class="tube water" id="waterTube">
+        <div class="liquid"></div>
+        <div class="pour-stream"></div>
+        <span>Water</span>
+    </div>
+
+    <!-- Egg -->
+    <div class="solid egg" id="eggTube">🥚</div>
+
+    <!-- Salt -->
+    <div class="solid salt" id="saltTube">
+        🧂 Salt
+        <div class="salt-stream"></div>
+    </div>
+
+    <!-- Beaker -->
+    <div class="beaker" id="beaker">
+        <div class="beaker-liquid"></div>
+        <div id="eggInBeaker">🥚</div>
+        <span>Beaker</span>
+    </div>
+
+</div>
+
+<!-- Conclusion -->
+<div id="conclusionBox" class="conclusion-box" style="display:none;">
+    <h3>🧾 Conclusion</h3>
+    <p>
+        Adding salt increases the density of water.
+        When water becomes denser than the egg, the egg floats.
+    </p>
+</div>
+
+<br>
+<a href="index.html"><button>⬅ Back to Main Menu</button></a>
+
+<script src="density.js"></script>
+</body>
+</html>

@@ -1,0 +1,112 @@
+body {
+    font-family: Arial, sans-serif;
+    background: #f4f9fd;
+    text-align: center;
+}
+
+.container {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+}
+
+.steps-box {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    width: 260px;
+    text-align: left;
+}
+
+.steps-box li {
+    margin: 10px 0;
+}
+
+.steps-box .active {
+    color: green;
+    font-weight: bold;
+}
+
+.lab {
+    position: relative;
+    width: 650px;
+    height: 380px;
+    background: #eef6fb;
+    border-radius: 15px;
+}
+
+.human {
+    font-size: 80px;
+    position: absolute;
+    left: 40px;
+    bottom: 40px;
+}
+
+.lungs {
+    font-size: 90px;
+    position: absolute;
+    left: 270px;
+    top: 80px;
+    transition: color 0.4s;
+}
+
+.blood {
+    font-size: 60px;
+    position: absolute;
+    left: 470px;
+    top: 170px;
+    transition: color 0.4s;
+}
+
+.breath-text {
+    position: absolute;
+    top: 40px;
+    left: 290px;
+    font-size: 22px;
+    font-weight: bold;
+    color: #3498db;
+    display: none;
+}
+
+.breath-text.exhale {
+    color: #e74c3c;
+}
+
+.gas {
+    position: absolute;
+    cursor: grab;
+    font-size: 30px;
+}
+
+.o2 {
+    left: 100px;
+    top: 40px;
+}
+
+.co2 {
+    left: 520px;
+    top: 260px;
+    display: none;
+}
+
+.cloud {
+    display: none;
+    position: absolute;
+    left: 100px;
+    top: 20px;
+    animation: float 2s infinite;
+}
+
+@keyframes float {
+    from { transform: translateY(0); opacity: 1; }
+    to { transform: translateY(-40px); opacity: 0; }
+}
+
+.conclusion {
+    display: none;
+    background: #e9fbe9;
+    width: 70%;
+    margin: 20px auto;
+    padding: 15px;
+    border-radius: 10px;
+}

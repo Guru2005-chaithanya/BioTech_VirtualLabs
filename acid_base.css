@@ -1,0 +1,22 @@
+/* Acid–Base experiment beaker behavior */
+
+.beaker-liquid {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 0%;
+    background: transparent;
+    border-radius: 0 0 40px 40px;
+    transition: height 1s, background 1s;
+}
+
+/* After pouring */
+.beaker.filled .beaker-liquid {
+    height: 60%;
+    background: rgba(180, 100, 220, 0.7);
+}
+
+/* After reaction */
+.beaker.reaction .beaker-liquid {
+    background: rgba(210, 60, 210, 0.8);
+}
